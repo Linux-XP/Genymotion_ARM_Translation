@@ -35,7 +35,7 @@
 
 ## Como instalar segue o video
 
-https://www.blogger.com/video.g?token=AD6v5dyiGP69LSUJZ0jWgcZrmlGiTEGJOkiv5ObiWlBl1epL5S64HviLG2yLXjcilE6epDppcoaLS1BD2UiWkdIZzYSGw42It4_USARolNh7edpKneJxUxlD5SMKg883kbUheCjAtds
+https://github.com/Linux-XP/Genymotion_ARM_Translation/raw/main/Genymotion.mp4
 
 ## Genymotion Não é possível instalar a solução APK:
 
