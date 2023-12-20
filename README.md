@@ -33,6 +33,10 @@
 * [8.0](/package/Genymotion-ARM-Translation_for_8.0.zip)
 * [9.0](/package/Genymotion-ARM-Translation_for_9.0.zip)
 
+## Como instalar segue o video
+
+https://www.blogger.com/video.g?token=AD6v5dyiGP69LSUJZ0jWgcZrmlGiTEGJOkiv5ObiWlBl1epL5S64HviLG2yLXjcilE6epDppcoaLS1BD2UiWkdIZzYSGw42It4_USARolNh7edpKneJxUxlD5SMKg883kbUheCjAtds
+
 ## Genymotion Não é possível instalar a solução APK:
 
 1. baixe Genymotion-ARM-Translation-for[v]
