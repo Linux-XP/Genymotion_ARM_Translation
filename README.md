@@ -39,17 +39,17 @@
 2. Irá baixar o kit de ferramentas arrastando e soltando diretamente no Genymotion,
 3. Se falhar
 ```
-   1. adb shell
-   2. cd /cartão SD/Download/
-   3. sh /system/bin/flash-archive.sh /sdcard/Download/Genymotion-ARM-Translation.zip
-   4. reinicialização do adb
+  1. adb shell
+  2. cd /sdcard/Download/
+  3. sh /system/bin/flash-archive.sh /sdcard/Download/Genymotion-ARM-Translation.zip
+  4. adb reboot
 ```
 4. Reinicializando o emulador
 
 ## Instalar o Adb
 
 ```bash
-   brew cask instalar ferramentas da plataforma Android
+  brew cask install android-platform-tools
 ```
 
 ## Perguntas frequentes/solução de problemas
