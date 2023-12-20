@@ -35,7 +35,7 @@
 
 ## Como instalar segue o video
 
-![video](https://github.com/Linux-XP/Genymotion_ARM_Translation/raw/main/Genymotion.mp4)
+[![video](https://github.com/Linux-XP/Genymotion_ARM_Translation/raw/main/Genymotion.mp4)](https://github.com/Linux-XP/Genymotion_ARM_Translation/blob/main/Genymotion.mp4)
 
 ## Genymotion Não é possível instalar a solução APK:
 
