@@ -1,29 +1,29 @@
 ​<h1 align="center">:rocket: Genymotion_ARM_Translation :rocket: </h1>
 
-<p align="center">
+<p alinhar="centro">
 <a href="https://github.com/m9rc0">
-  <img src="https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=m9rc0">
+   <img src="https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=m9rc0">
 </a>
 <a href="https://github.com/m9rc0/Genymotion_ARM_Translation">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+     <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </a>
 </p>
 
-## Genymotion Translation
+## Tradução Genymotion
 
 ```
-├── LICENSE
+├── LICENÇA
 ├── README.md
-└── package
-    ├── Genymotion-ARM-Translation_for_4.4.zip
-    ├── Genymotion-ARM-Translation_for_5.1.zip
-    ├── Genymotion-ARM-Translation_for_6.0.zip
-    ├── Genymotion-ARM-Translation_for_7.X.zip
-    ├── Genymotion-ARM-Translation_for_8.0.zip
-    └── Genymotion-ARM-Translation_for_9.0.zip
+└── pacote
+     ├── Genymotion-ARM-Translation_for_4.4.zip
+     ├── Genymotion-ARM-Translation_for_5.1.zip
+     ├── Genymotion-ARM-Translation_for_6.0.zip
+     ├── Genymotion-ARM-Translation_for_7.X.zip
+     ├── Genymotion-ARM-Translation_for_8.0.zip
+     └── Genymotion-ARM-Translation_for_9.0.zip
 ```
 
-## Android version mapping
+## Mapeamento de versão do Android
 
 * [4.3](/package/Genymotion-ARM-Translation_for_4.3.zip)
 * [4.4](/package/Genymotion-ARM-Translation_for_4.4.zip)
@@ -33,41 +33,39 @@
 * [8.0](/package/Genymotion-ARM-Translation_for_8.0.zip)
 * [9.0](/package/Genymotion-ARM-Translation_for_9.0.zip)
 
-## Genymotion Can't install the APK solution:
+## Genymotion Não é possível instalar a solução APK:
 
-1. download Genymotion-ARM-Translation-for[v]
-2. Will download the toolkit drag and drop into the Genymotion directly,
-3. If failure
+1. baixe Genymotion-ARM-Translation-for[v]
+2. Irá baixar o kit de ferramentas arrastando e soltando diretamente no Genymotion,
+3. Se falhar
 ```
-  1. adb shell
-  2. cd /sdcard/Download/
-  3. sh /system/bin/flash-archive.sh /sdcard/Download/Genymotion-ARM-Translation.zip
-  4. adb reboot
+   1. adb shell
+   2. cd /cartão SD/Download/
+   3. sh /system/bin/flash-archive.sh /sdcard/Download/Genymotion-ARM-Translation.zip
+   4. reinicialização do adb
 ```
-4. Resetting the Emulator
+4. Reinicializando o emulador
 
-## Install Adb
+## Instalar o Adb
 
 ```bash
-  brew cask install android-platform-tools
+   brew cask instalar ferramentas da plataforma Android
 ```
 
-## FAQ / Troubleshooting
+## Perguntas frequentes/solução de problemas
 
-### APK still doesn't install after installing ARM_Translation tool
+### O APK ainda não é instalado após a instalação da ferramenta ARM_Translation
 
-If you are still getting this error message, follow the guide:
+Se você ainda estiver recebendo esta mensagem de erro, siga o guia:
 
 ```
-  An error occured while deploying the file.
-  This probably means that the app contains ARM native code and your Genymotion device cannot run ARM instructions. You should either build your native code to x86 or install an ARM translation tool in your device.
+   Ocorreu um erro ao implantar o arquivo.
+   Isso provavelmente significa que o aplicativo contém código nativo ARM e seu dispositivo Genymotion não pode executar instruções ARM. Você deve construir seu código nativo para x86 ou instalar uma ferramenta de tradução ARM em seu dispositivo.
 ```
 
-1. Verify if you have installed ARM_Translation successfully.
- - Run `getprop ro.product.cpu.abilist` through ADB shell. If it shows `x86,armeabi-v7a,armeabi`, ARM_Translation has been installed successfully.
- - If you don't know how to run ADB shell, follow [this guide](https://docs.genymotion.com/desktop/041_Deploying_an_app/#install-the-arm-translation-tools) to get ABI information.
+1. Verifique se você instalou ARM_Translation com sucesso.
+  - Execute `getprop ro.product.cpu.abilist` através do shell ADB. Se mostrar `x86,armeabi-v7a,armeabi`, ARM_Translation foi instalado com sucesso.
+  - Se você não sabe como executar o shell ADB, siga [este guia](https://docs.genymotion.com/desktop/041_Deploying_an_app/#install-the-arm-translation-tools) para obter informações de ABI.
 
-2. Check if armeabi-v7a is enough for your APK.
-  - Run `unzip -l YOUR_APP.apk | grep -o ' lib/[^/]*/' | uniq`. If the **only** output is `lib/arm64-v8a/`, it means your APK doesn't support armv7 (32bit). You need another armv8 (64bit) translation tool. [This project](https://github.com/niizam/Genymotion_A11_libhoudini) might help.
-
-
+2. Verifique se armeabi-v7a é suficiente para o seu APK.
+   - Execute `unzip -l YOUR_APP.apk | grep -o ' lib/[^/]*/' | único`. Se a saída **apenas** for `lib/arm64-v8a/`, significa que seu APK não suporta armv7 (32 bits). Você precisa de outra ferramenta de tradução armv8 (64 bits). [Este projeto](https://github.com/niizam/Genymotion_A11_libhoudini) pode ajudar.
